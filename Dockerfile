@@ -17,6 +17,7 @@ RUN yum -y install wget && \
     alternatives --install /usr/bin/java jar /usr/java/latest/bin/java 200000 && \
     alternatives --install /usr/bin/javaws javaws /usr/java/latest/bin/javaws 200000 && \
     alternatives --install /usr/bin/javac javac /usr/java/latest/bin/javac 200000 && \
+    alternatives --set java /usr/java/jdk1.8.0_101/jre/bin/java && \
     rm -rf /tmp/jdk-8-linux-x64.rpm && yum clean all
 
 ENV JAVA_HOME /usr/java/latest
