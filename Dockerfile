@@ -1,6 +1,6 @@
 # java
 # VERSION       Java 8
-FROM centos7
+FROM centos:centos7
 MAINTAINER Oliver Guggenbuehl, o.guggenbuehl@gmail.com
 
 ENV JAVA_VERSION 8u101
